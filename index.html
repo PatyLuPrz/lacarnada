@@ -12,6 +12,26 @@
 </head>
 <body>
 
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="icon-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="icon-chevron-up" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24"><path d="M8 5h3v14H8zM15 5h3v14h-3z"/></symbol>
+    <symbol id="icon-rotate-cw" viewBox="0 0 24 24"><path d="M20 7v5h-5M4.8 9A8 8 0 1 1 4 14"/><path d="M4 5v4h4"/></symbol>
+    <symbol id="icon-rotate-ccw" viewBox="0 0 24 24"><path d="M4 7v5h5M19.2 9A8 8 0 1 0 20 14"/><path d="M20 5v4h-4"/></symbol>
+    <symbol id="icon-crown" viewBox="0 0 24 24"><path d="m2 7 5 4 5-7 5 7 5-4-2 12H4L2 7Z"/><path d="M4 22h16"/></symbol>
+    <symbol id="icon-diamond" viewBox="0 0 24 24"><path d="M6 3h12l5 6-11 12L1 9l5-6Z"/><path d="m1 9 22 0M6 3l6 18 6-18"/></symbol>
+    <symbol id="icon-trophy" viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4v3a4 4 0 0 0 4 4M17 6h3v3a4 4 0 0 1-4 4"/></symbol>
+    <symbol id="icon-skull" viewBox="0 0 24 24"><path d="M12 3a8 8 0 0 0-5 14.2V21h10v-3.8A8 8 0 0 0 12 3Z"/><circle cx="9" cy="11" r="1.4"/><circle cx="15" cy="11" r="1.4"/><path d="M10 16h4M10 19v2M14 19v2"/></symbol>
+    <symbol id="icon-stone" viewBox="0 0 24 24"><path d="M5 21V9l3-4 4 2 4-4 3 5v13H5Z"/><path d="M8 12h1M15 12h1M10 17h5"/></symbol>
+    <symbol id="icon-swords" viewBox="0 0 24 24"><path d="m14 5 5-3 3 3-3 5M10 19l-5 3-3-3 3-5M4 4l16 16M20 4 4 20M8 8l-3 3M16 16l3-3M16 8l3-3M8 16l-3 3"/></symbol>
+    <symbol id="icon-flame" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-4-3-6-3-10-2 2-3 4-3 6-2-2-3-4-3-7-4 4-6 8-6 12a8 8 0 0 0 8 6Z"/><path d="M12 22a4 4 0 0 0 4-4c0-2-2-4-2-5-2 1-2 3-2 4-1-1-2-2-2-3-2 2-2 3-2 4a4 4 0 0 0 4 4Z"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  </svg>
+
   <div id="loader" class="loader">
     <div class="loader-inner">
       <div class="loader-fish"><img src="./logo.png" width="150 px" alt="La Carnada"></div>
@@ -30,7 +50,7 @@
       </div>
     </a>
 
-    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <button class="menu-toggle" aria-label="Abrir menú"><svg class="icon" aria-hidden="true"><use href="#icon-menu"/></svg></button>
 
     <nav class="nav">
       <a href="#home">Inicio</a>
@@ -55,17 +75,17 @@
         <p class="eyebrow">ORGANIZACIÓN DE GAMING MÁS O MENOS PROFESIONAL</p>
         <h1>LA CARNADA</h1>
         <p class="hero-tagline">No somos buenos.<br><strong>Somos constantes.</strong></p>
-        <a href="#roster" class="button">CONOCE A LA CARNADA <span>→</span></a>
+        <a href="#roster" class="button">CONOCE A LA CARNADA <svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"/></svg></a>
       </div>
       <div class="hero-carousel-controls" role="group" aria-label="Controles del carrusel del hero">
-        <button class="hero-arrow" type="button" data-hero-prev aria-label="Imagen anterior">←</button>
+        <button class="hero-arrow" type="button" data-hero-prev aria-label="Imagen anterior"><svg class="icon" aria-hidden="true"><use href="#icon-chevron-left"/></svg></button>
         <div class="hero-dots" role="group" aria-label="Seleccionar imagen">
           <button class="hero-dot is-active" type="button" data-hero-index="0" aria-label="Mostrar imagen 1" aria-pressed="true"></button>
           <button class="hero-dot" type="button" data-hero-index="1" aria-label="Mostrar imagen 2" aria-pressed="false"></button>
           <button class="hero-dot" type="button" data-hero-index="2" aria-label="Mostrar imagen 3" aria-pressed="false"></button>
         </div>
-        <button class="hero-arrow" type="button" data-hero-next aria-label="Imagen siguiente">→</button>
-        <button class="hero-pause" type="button" data-hero-pause aria-label="Pausar carrusel">Ⅱ</button>
+        <button class="hero-arrow" type="button" data-hero-next aria-label="Imagen siguiente"><svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"/></svg></button>
+        <button class="hero-pause" type="button" data-hero-pause aria-label="Pausar carrusel"><svg class="icon" aria-hidden="true"><use href="#icon-pause"/></svg></button>
         <span class="visually-hidden" data-hero-status aria-live="polite">Imagen 1 de 3</span>
       </div>
     </section>
@@ -76,7 +96,7 @@
           <p class="eyebrow">// ROSTER</p>
           <h2>CONOCE AL EQUIPO</h2>
         </div>
-        <a href="#games" class="text-link">DESCUBRE QUÉ JUGAMOS →</a>
+        <a href="#games" class="text-link">DESCUBRE QUÉ JUGAMOS <svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"/></svg></a>
       </div>
 
       <div class="roster-grid">
@@ -84,17 +104,17 @@
         <article class="player-card">
           <div class="player-card-inner">
             <div class="player-face player-front">
-              <div class="player-photo"><img class="player-avatar" src="./images/fer-frik.jpg" alt="Retrato de FER-FRIK" title="Imagen pendiente: images/fer-frik.jpg"><span class="photo-placeholder">IMAGEN PENDIENTE<small>images/fer-frik.jpg</small></span></div>
-              <div class="player-rank">♛</div>
+              <div class="player-photo"><img class="player-avatar" src="./images/fer-frik.jpg" alt="Retrato de FER-FRIK" title="Imagen pendiente: images/fer-frik.jpg"><span class="photo-placeholder"><svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg>IMAGEN PENDIENTE<small>images/fer-frik.jpg</small></span></div>
+              <div class="player-rank" aria-label="Capitán"><svg class="icon" aria-hidden="true"><use href="#icon-crown"/></svg></div>
               <h3>FER-FRIK</h3>
               <div class="player-specialty"><span>ESPECIALIDAD</span><strong>¡Caboom!</strong><p class="player-banter">Healer de confianza. Si oyes «¡Caboom!», quizá ya te curó.</p></div>
               <div class="social-links" aria-label="Redes sociales de FER-FRIK">
                 <a href="https://www.instagram.com/fer_frik_" aria-label="Instagram de FER-FRIK">IG</a><a href="https://www.twitch.tv/fer_frik" aria-label="Twitch de FER-FRIK">TW</a><a href="https://www.tiktok.com/@fer_frik" aria-label="TikTok de FER-FRIK">TT</a>
               </div>
-              <button class="player-toggle" type="button" aria-expanded="false">VER MÁS <span>↻</span></button>
+              <button class="player-toggle" type="button" aria-expanded="false">VER MÁS <svg class="icon" aria-hidden="true"><use href="#icon-rotate-cw"/></svg></button>
             </div>
             <div class="player-face player-back" aria-hidden="true" inert>
-              <button class="player-toggle player-toggle-back" type="button" aria-expanded="false"><span>↶</span> VOLVER</button>
+              <button class="player-toggle player-toggle-back" type="button" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#icon-rotate-ccw"/></svg> VOLVER</button>
               <h3>FER-FRIK</h3>
               <p class="player-lore">Te levanta con una mano y prende fuego al mapa con la otra. Multitarea.</p>
               <dl>
@@ -110,17 +130,17 @@
         <article class="player-card">
           <div class="player-card-inner">
             <div class="player-face player-front">
-              <div class="player-photo"><img class="player-avatar" src="./images/sphinx.jpg" alt="Retrato de Sphinx" title="Imagen pendiente: images/sphinx.jpg"><span class="photo-placeholder">IMAGEN PENDIENTE<small>images/sphinx.jpg</small></span></div>
-              <div class="player-rank">◆</div>
+              <div class="player-photo"><img class="player-avatar" src="./images/sphinx.jpg" alt="Retrato de Sphinx" title="Imagen pendiente: images/sphinx.jpg"><span class="photo-placeholder"><svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg>IMAGEN PENDIENTE<small>images/sphinx.jpg</small></span></div>
+              <div class="player-rank" aria-label="Integrante"><svg class="icon" aria-hidden="true"><use href="#icon-diamond"/></svg></div>
               <h3>SPHINX</h3>
               <div class="player-specialty"><span>ESPECIALIDAD</span><strong>Mala suerte eterna</strong><p class="player-banter">Francotirador excelente. La mala suerte va por separado.</p></div>
               <div class="social-links" aria-label="Redes sociales de Sphinx">
                 <a href="https://www.instagram.com/sphinx500" aria-label="Instagram de Sphinx">IG</a><a href="https://www.twitch.tv/sphinx5011" aria-label="Twitch de Sphinx">TW</a><a href="https://www.tiktok.com/@sphinx500" aria-label="TikTok de Sphinx">TT</a>
               </div>
-              <button class="player-toggle" type="button" aria-expanded="false">VER MÁS <span>↻</span></button>
+              <button class="player-toggle" type="button" aria-expanded="false">VER MÁS <svg class="icon" aria-hidden="true"><use href="#icon-rotate-cw"/></svg></button>
             </div>
             <div class="player-face player-back" aria-hidden="true" inert>
-              <button class="player-toggle player-toggle-back" type="button" aria-expanded="false"><span>↶</span> VOLVER</button>
+              <button class="player-toggle player-toggle-back" type="button" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#icon-rotate-ccw"/></svg> VOLVER</button>
               <h3>SPHINX</h3>
               <p class="player-lore">Apunta con precisión quirúrgica. Si falla, fue culpa del ping. Obviamente.</p>
               <dl>
@@ -136,17 +156,17 @@
         <article class="player-card">
           <div class="player-card-inner">
             <div class="player-face player-front">
-              <div class="player-photo"><img class="player-avatar" src="./images/parzival.jpg" alt="Retrato de Parzival" title="Imagen pendiente: images/parzival.jpg"><span class="photo-placeholder">IMAGEN PENDIENTE<small>images/parzival.jpg</small></span></div>
-              <div class="player-rank">◆</div>
+              <div class="player-photo"><img class="player-avatar" src="./images/parzival.jpg" alt="Retrato de Parzival" title="Imagen pendiente: images/parzival.jpg"><span class="photo-placeholder"><svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg>IMAGEN PENDIENTE<small>images/parzival.jpg</small></span></div>
+              <div class="player-rank" aria-label="Integrante"><svg class="icon" aria-hidden="true"><use href="#icon-diamond"/></svg></div>
               <h3>PARZIVAL</h3>
               <div class="player-specialty"><span>ESPECIALIDAD</span><strong>Habilidades telepáticas</strong><p class="player-banter">Y radar de monas chinas: alcance sospechosamente largo.</p></div>
               <div class="social-links" aria-label="Redes sociales de Parzival">
                 <a href="https://www.instagram.com/eliazar_r.v" aria-label="Instagram de Parzival">IG</a><a href="https://www.twitch.tv/parzi_valx" aria-label="Twitch de Parzival">TW</a><a href="https://www.tiktok.com/@parzival2000x7" aria-label="TikTok de Parzival">TT</a>
               </div>
-              <button class="player-toggle" type="button" aria-expanded="false">VER MÁS <span>↻</span></button>
+              <button class="player-toggle" type="button" aria-expanded="false">VER MÁS <svg class="icon" aria-hidden="true"><use href="#icon-rotate-cw"/></svg></button>
             </div>
             <div class="player-face player-back" aria-hidden="true" inert>
-              <button class="player-toggle player-toggle-back" type="button" aria-expanded="false"><span>↶</span> VOLVER</button>
+              <button class="player-toggle player-toggle-back" type="button" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#icon-rotate-ccw"/></svg> VOLVER</button>
               <h3>PARZIVAL</h3>
               <p class="player-lore">Le encantan las monas chinas. Dice que es análisis de personaje.</p>
               <dl>
@@ -162,17 +182,17 @@
         <article class="player-card">
           <div class="player-card-inner">
             <div class="player-face player-front">
-              <div class="player-photo"><img class="player-avatar" src="./images/patylu.jpg" alt="Retrato de PatyLu" title="Imagen pendiente: images/patylu.jpg"><span class="photo-placeholder">IMAGEN PENDIENTE<small>images/patylu.jpg</small></span></div>
-              <div class="player-rank">◆</div>
+              <div class="player-photo"><img class="player-avatar" src="./images/patylu.jpg" alt="Retrato de PatyLu" title="Imagen pendiente: images/patylu.jpg"><span class="photo-placeholder"><svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg>IMAGEN PENDIENTE<small>images/patylu.jpg</small></span></div>
+              <div class="player-rank" aria-label="Integrante"><svg class="icon" aria-hidden="true"><use href="#icon-diamond"/></svg></div>
               <h3>PATYLU</h3>
               <div class="player-specialty"><span>ESPECIALIDAD</span><strong>Insultos 3 mil</strong><p class="player-banter">Insulta, cae, reaparece. La tradición continúa.</p></div>
               <div class="social-links" aria-label="Redes sociales de PatyLu">
                 <a href="https://www.instagram.com/patyluprz" aria-label="Instagram de PatyLu">IG</a><a href="https://www.twitch.tv/patyluprz" aria-label="Twitch de PatyLu">TW</a><a href="https://www.tiktok.com/@pattyprz" aria-label="TikTok de PatyLu">TT</a>
               </div>
-              <button class="player-toggle" type="button" aria-expanded="false">VER MÁS <span>↻</span></button>
+              <button class="player-toggle" type="button" aria-expanded="false">VER MÁS <svg class="icon" aria-hidden="true"><use href="#icon-rotate-cw"/></svg></button>
             </div>
             <div class="player-face player-back" aria-hidden="true" inert>
-              <button class="player-toggle player-toggle-back" type="button" aria-expanded="false"><span>↶</span> VOLVER</button>
+              <button class="player-toggle player-toggle-back" type="button" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#icon-rotate-ccw"/></svg> VOLVER</button>
               <h3>PATYLU</h3>
               <p class="player-lore">Mueres cada dos por tres, pero el rival se lleva una última frase para el recuerdo.</p>
               <dl>
@@ -191,7 +211,7 @@
     <section id="games" class="section games-section">
       <div class="section-heading">
         <div><p class="eyebrow">// EL MENÚ DEL CAOS</p><h2>LO QUE MÁS JUGAMOS</h2></div>
-        <span class="text-link">CUATRO JUEGOS, CERO GARANTÍAS →</span>
+        <span class="text-link">CUATRO JUEGOS, CERO GARANTÍAS <svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"/></svg></span>
       </div>
       <div class="games-list">
         <article><span>01</span><h3>PEAK</h3><p>Subimos juntos. Caemos juntos. Culpamos al que iba adelante.</p></article>
@@ -222,9 +242,9 @@
         <p class="eyebrow">// ACHIEVEMENTS</p>
         <h2>LOGROS DESBLOQUEADOS</h2>
         <div class="achievement-grid">
-          <article><div class="achievement-icon">🏆</div><h3>PRIMERA VICTORIA ACCIDENTAL</h3><p>Ganaron una partida sin saber cómo.</p></article>
-          <article><div class="achievement-icon">💀</div><h3>TEAM WIPE SEGUIDO</h3><p>Eliminan al equipo enemigo... y a ustedes mismos.</p></article>
-          <article><div class="achievement-icon">🗿</div><h3>NO RAGE QUIT</h3><p>Completaron una partida sin que nadie abandonara.</p></article>
+          <article><div class="achievement-icon"><svg class="icon" aria-hidden="true"><use href="#icon-trophy"/></svg></div><h3>PRIMERA VICTORIA ACCIDENTAL</h3><p>Ganaron una partida sin saber cómo.</p></article>
+          <article><div class="achievement-icon"><svg class="icon" aria-hidden="true"><use href="#icon-skull"/></svg></div><h3>TEAM WIPE SEGUIDO</h3><p>Eliminan al equipo enemigo... y a ustedes mismos.</p></article>
+          <article><div class="achievement-icon"><svg class="icon" aria-hidden="true"><use href="#icon-stone"/></svg></div><h3>NO RAGE QUIT</h3><p>Completaron una partida sin que nadie abandonara.</p></article>
           <article><div class="achievement-icon"><img src="./logo.png" width="40 px" alt="La Carnada"></div><h3>LA CARNADA SIGUE VIVA</h3><p>Sobrevivieron otra noche juntos.</p></article>
         </div>
       </div>
@@ -236,10 +256,10 @@
         <h2>LA HISTORIA</h2>
         <div class="timeline">
           <div><i><img src="./logo.png" width="20 px" alt="La Carnada"></i><b>202X</b><strong>FOUNDATION</strong><p>“¿Y si hacemos un grupo para jugar?”</p></div>
-          <div><i>☠</i><b>2022</b><strong>THE FIRST BLOODBATH</strong><p>Alguien descubrió que no sabían jugar.</p></div>
-          <div><i>⚔</i><b>2023</b><strong>THE DARK AGE</strong><p>Nadie recuerda exactamente qué pasó.</p></div>
-          <div><i>🔥</i><b>2025</b><strong>THE RETURN</strong><p>Volvieron como si nada hubiera ocurrido.</p></div>
-          <div><i>👑</i><b>2026</b><strong>THE LEGACY</strong><p>La Carnada sigue viva.</p></div>
+          <div><i><svg class="icon" aria-hidden="true"><use href="#icon-skull"/></svg></i><b>2022</b><strong>THE FIRST BLOODBATH</strong><p>Alguien descubrió que no sabían jugar.</p></div>
+          <div><i><svg class="icon" aria-hidden="true"><use href="#icon-swords"/></svg></i><b>2023</b><strong>THE DARK AGE</strong><p>Nadie recuerda exactamente qué pasó.</p></div>
+          <div><i><svg class="icon" aria-hidden="true"><use href="#icon-flame"/></svg></i><b>2025</b><strong>THE RETURN</strong><p>Volvieron como si nada hubiera ocurrido.</p></div>
+          <div><i><svg class="icon" aria-hidden="true"><use href="#icon-crown"/></svg></i><b>2026</b><strong>THE LEGACY</strong><p>La Carnada sigue viva.</p></div>
         </div>
       </div>
     </section>
@@ -250,24 +270,24 @@
           <p class="eyebrow">// HALL OF FAME</p>
           <h2>MOMENTOS LEGENDARIOS</h2>
         </div>
-        <a href="#" class="text-link">VER TODOS LOS MOMENTOS →</a>
+        <a href="#" class="text-link">VER TODOS LOS MOMENTOS <svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"/></svg></a>
       </div>
 
       <div class="moments-grid">
         <article class="moment-card youtube-moment">
-          <a class="moment-video" href="https://youtu.be/1rZ8kdvKRYc?si=ynesNU65iEJvzLDH" target="_blank" rel="noopener noreferrer" aria-label="Reproducir video de FER-FRIK en YouTube"><img src="https://img.youtube.com/vi/1rZ8kdvKRYc/hqdefault.jpg" alt="Miniatura del video de FER-FRIK"><span class="youtube-play" aria-hidden="true">▶</span></a>
+          <a class="moment-video" href="https://youtu.be/1rZ8kdvKRYc?si=ynesNU65iEJvzLDH" target="_blank" rel="noopener noreferrer" aria-label="Reproducir video de FER-FRIK en YouTube"><img src="https://img.youtube.com/vi/1rZ8kdvKRYc/hqdefault.jpg" alt="Miniatura del video de FER-FRIK"><span class="youtube-play" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg></span></a>
           <span>VIDEO DESTACADO</span><h3>FER-FRIK EN YOUTUBE</h3><p>Un video largo para disfrutar el caos con calma.</p>
-          <a class="moment-watch-link" href="https://youtu.be/1rZ8kdvKRYc?si=ynesNU65iEJvzLDH" target="_blank" rel="noopener noreferrer">VER EN YOUTUBE ↗</a>
+          <a class="moment-watch-link" href="https://youtu.be/1rZ8kdvKRYc?si=ynesNU65iEJvzLDH" target="_blank" rel="noopener noreferrer">VER EN YOUTUBE <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
         </article>
         <article class="moment-card youtube-moment">
-          <a class="moment-video" href="https://youtu.be/JSNriTU0uTo?si=WeO7n3Qxad2cbVUe" target="_blank" rel="noopener noreferrer" aria-label="Reproducir segundo video de FER-FRIK en YouTube"><img src="https://img.youtube.com/vi/JSNriTU0uTo/hqdefault.jpg" alt="Miniatura del segundo video de FER-FRIK"><span class="youtube-play" aria-hidden="true">▶</span></a>
+          <a class="moment-video" href="https://youtu.be/JSNriTU0uTo?si=WeO7n3Qxad2cbVUe" target="_blank" rel="noopener noreferrer" aria-label="Reproducir segundo video de FER-FRIK en YouTube"><img src="https://img.youtube.com/vi/JSNriTU0uTo/hqdefault.jpg" alt="Miniatura del segundo video de FER-FRIK"><span class="youtube-play" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg></span></a>
           <span>VIDEO DESTACADO</span><h3>FER-FRIK EN YOUTUBE</h3><p>Más partidas, más historias, más ocasiones de decir «¿qué pasó?».</p>
-          <a class="moment-watch-link" href="https://youtu.be/JSNriTU0uTo?si=WeO7n3Qxad2cbVUe" target="_blank" rel="noopener noreferrer">VER EN YOUTUBE ↗</a>
+          <a class="moment-watch-link" href="https://youtu.be/JSNriTU0uTo?si=WeO7n3Qxad2cbVUe" target="_blank" rel="noopener noreferrer">VER EN YOUTUBE <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
         </article>
         <article class="moment-card youtube-moment">
-          <a class="moment-video" href="https://youtu.be/fCt9DGMKLyI?si=gSviNlN_UxQ4X6ej" target="_blank" rel="noopener noreferrer" aria-label="Reproducir tercer video de FER-FRIK en YouTube"><img src="https://img.youtube.com/vi/fCt9DGMKLyI/hqdefault.jpg" alt="Miniatura del tercer video de FER-FRIK"><span class="youtube-play" aria-hidden="true">▶</span></a>
+          <a class="moment-video" href="https://youtu.be/fCt9DGMKLyI?si=gSviNlN_UxQ4X6ej" target="_blank" rel="noopener noreferrer" aria-label="Reproducir tercer video de FER-FRIK en YouTube"><img src="https://img.youtube.com/vi/fCt9DGMKLyI/hqdefault.jpg" alt="Miniatura del tercer video de FER-FRIK"><span class="youtube-play" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg></span></a>
           <span>VIDEO DESTACADO</span><h3>FER-FRIK EN YOUTUBE</h3><p>Ponte cómodo: este highlight viene en formato extendido.</p>
-          <a class="moment-watch-link" href="https://youtu.be/fCt9DGMKLyI?si=gSviNlN_UxQ4X6ej" target="_blank" rel="noopener noreferrer">VER EN YOUTUBE ↗</a>
+          <a class="moment-watch-link" href="https://youtu.be/fCt9DGMKLyI?si=gSviNlN_UxQ4X6ej" target="_blank" rel="noopener noreferrer">VER EN YOUTUBE <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
         </article>
       </div>
 
@@ -279,7 +299,7 @@
         </div>
         <div class="stream-action">
           <span class="live-status" data-live-status aria-live="polite"><i></i><span data-live-label>CONSULTANDO HORARIO…</span></span>
-          <a class="stream-main-cta" data-stream-cta href="https://www.twitch.tv/fer_frik" target="_blank" rel="noopener noreferrer"><span>▶</span> <span data-stream-cta-label>VER CANAL EN TWITCH</span></a>
+          <a class="stream-main-cta" data-stream-cta href="https://www.twitch.tv/fer_frik" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg> <span data-stream-cta-label>VER CANAL EN TWITCH</span></a>
           <div class="stream-socials" aria-label="Redes oficiales de FER-FRIK">
             <a href="https://www.twitch.tv/fer_frik" target="_blank" rel="noopener noreferrer">Twitch</a>
             <a href="https://www.tiktok.com/@fer_frik" target="_blank" rel="noopener noreferrer">TikTok</a>
@@ -294,8 +314,8 @@
         <div class="creator-carousel-heading">
           <div><p class="eyebrow">// HIGHLIGHTS RECIENTES</p><h3>LOS FAILS NO SE RECORTAN SOLOS</h3><p class="creator-feed-note">Cuatro clips recientes de <a href="https://www.tiktok.com/@fer_frik" target="_blank" rel="noopener noreferrer">@fer_frik</a>. Desliza para verlos.</p></div>
           <div class="creator-carousel-controls" role="group" aria-label="Controles del carrusel de videos">
-            <button type="button" data-creator-prev aria-label="Clip anterior">←</button>
-            <button type="button" data-creator-next aria-label="Siguiente clip">→</button>
+            <button type="button" data-creator-prev aria-label="Clip anterior"><svg class="icon" aria-hidden="true"><use href="#icon-chevron-left"/></svg></button>
+            <button type="button" data-creator-next aria-label="Siguiente clip"><svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"/></svg></button>
           </div>
         </div>
         <div class="creator-carousel-window" role="region" aria-label="Highlights recientes de FER-FRIK" tabindex="0">
@@ -303,19 +323,19 @@
           <div class="creator-carousel-track" data-creator-track>
             <article class="creator-video-card">
               <div class="creator-video-copy"><span class="video-platform">TIKTOK · HIGHLIGHT</span><h4>AÚN TENGO EL TOQUE</h4><p>Fortnite, amigos y una puntería que todavía aparece de vez en cuando.</p></div>
-              <a class="video-preview video-tiktok" href="https://www.tiktok.com/@fer_frik/video/7544587346918853944" target="_blank" rel="noopener noreferrer" aria-label="Ver Aún tengo el toque de FER-FRIK en TikTok"><img class="highlight-thumbnail" src="./images/tiktok-7544587346918853944.jpg" alt="Captura de Aún tengo el toque, clip de Fortnite"><span class="video-preview-play">▶</span><span>VER CLIP EN TIKTOK ↗</span></a>
+              <a class="video-preview video-tiktok" href="https://www.tiktok.com/@fer_frik/video/7544587346918853944" target="_blank" rel="noopener noreferrer" aria-label="Ver Aún tengo el toque de FER-FRIK en TikTok"><img class="highlight-thumbnail" src="./images/tiktok-7544587346918853944.jpg" alt="Captura de Aún tengo el toque, clip de Fortnite"><span class="video-preview-play"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg></span><span>VER CLIP EN TIKTOK <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span></a>
             </article>
             <article class="creator-video-card">
               <div class="creator-video-copy"><span class="video-platform">TIKTOK · HIGHLIGHT</span><h4>¿DALTONISMO EN FORTNITE?</h4><p>Ese momento en que los colores deciden jugar en tu contra.</p></div>
-              <a class="video-preview video-tiktok" href="https://www.tiktok.com/@fer_frik/video/7541987549112208696" target="_blank" rel="noopener noreferrer" aria-label="Ver el clip de daltonismo en Fortnite de FER-FRIK"><img class="highlight-thumbnail" src="./images/tiktok-7541987549112208696.jpg" alt="Captura de Fortnite del clip de daltonismo"><span class="video-preview-play">▶</span><span>VER CLIP EN TIKTOK ↗</span></a>
+              <a class="video-preview video-tiktok" href="https://www.tiktok.com/@fer_frik/video/7541987549112208696" target="_blank" rel="noopener noreferrer" aria-label="Ver el clip de daltonismo en Fortnite de FER-FRIK"><img class="highlight-thumbnail" src="./images/tiktok-7541987549112208696.jpg" alt="Captura de Fortnite del clip de daltonismo"><span class="video-preview-play"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg></span><span>VER CLIP EN TIKTOK <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span></a>
             </article>
             <article class="creator-video-card">
               <div class="creator-video-copy"><span class="video-platform">TIKTOK · HIGHLIGHT</span><h4>¡LO SIENTOOOOO!</h4><p>Un clip de Fortnite que viene con disculpa incluida.</p></div>
-              <a class="video-preview video-tiktok" href="https://www.tiktok.com/@fer_frik/video/7669140822486469908" target="_blank" rel="noopener noreferrer" aria-label="Ver ¡Lo siento! de FER-FRIK en TikTok"><img class="highlight-thumbnail" src="./images/tiktok-7669140822486469908.jpg" alt="Captura del clip de Fortnite ¡Lo siento! de FER-FRIK"><span class="video-preview-play">▶</span><span>VER CLIP EN TIKTOK ↗</span></a>
+              <a class="video-preview video-tiktok" href="https://www.tiktok.com/@fer_frik/video/7669140822486469908" target="_blank" rel="noopener noreferrer" aria-label="Ver ¡Lo siento! de FER-FRIK en TikTok"><img class="highlight-thumbnail" src="./images/tiktok-7669140822486469908.jpg" alt="Captura del clip de Fortnite ¡Lo siento! de FER-FRIK"><span class="video-preview-play"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg></span><span>VER CLIP EN TIKTOK <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span></a>
             </article>
             <article class="creator-video-card">
               <div class="creator-video-copy"><span class="video-platform">TIKTOK · HIGHLIGHT</span><h4>LAS VOCES DE MI MENTE</h4><p>En las islas de Fortnite, el escuadrón interior también opina.</p></div>
-              <a class="video-preview video-tiktok" href="https://www.tiktok.com/@fer_frik/video/7544586063625473285" target="_blank" rel="noopener noreferrer" aria-label="Ver Las voces de mi mente me atormentan de FER-FRIK en TikTok"><img class="highlight-thumbnail" src="./images/tiktok-7544586063625473285.jpg" alt="Captura del clip Las voces de mi mente me atormentan, en Fortnite"><span class="video-preview-play">▶</span><span>VER CLIP EN TIKTOK ↗</span></a>
+              <a class="video-preview video-tiktok" href="https://www.tiktok.com/@fer_frik/video/7544586063625473285" target="_blank" rel="noopener noreferrer" aria-label="Ver Las voces de mi mente me atormentan de FER-FRIK en TikTok"><img class="highlight-thumbnail" src="./images/tiktok-7544586063625473285.jpg" alt="Captura del clip Las voces de mi mente me atormentan, en Fortnite"><span class="video-preview-play"><svg class="icon" aria-hidden="true"><use href="#icon-play"/></svg></span><span>VER CLIP EN TIKTOK <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span></a>
             </article>
           </div>
         </div>
@@ -327,7 +347,7 @@
         <p class="eyebrow">// RECLUTAMIENTO CUESTIONABLE · TEMPORADA 2026</p>
         <h2>¿TE SOBRA CONFIANZA?<br><span>VEN A PERDERLA.</span></h2>
         <p>Buscamos refuerzos con buen humor, reflejos opcionales<br class="desktop-break"> y tolerancia a nuestros «una última y nos vamos».</p>
-        <button class="button join-prank" type="button">QUIERO UNIRME AL CAOS <span>→</span></button>
+        <button class="button join-prank" type="button">QUIERO UNIRME AL CAOS <svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"/></svg></button>
         <small class="join-disclaimer">*Al presionar, aceptas que te hagamos dudar de tu decisión.</small>
       </div>
       <div class="join-visual" role="img" aria-label="La Carnada reunida con uniformes de esports">
@@ -340,13 +360,13 @@
   <footer class="footer">
     <div class="footer-brand"><a href="#home" class="footer-brand-link"><span class="brand-mark"><img src="./logo.png" width="50" alt="La Carnada"></span><strong>LA CARNADA<br><small>ESPORTS · EST. 202X</small></strong></a><p>Amistad, caos y una última partida que nunca es la última.</p></div>
     <div class="footer-column"><h4>EXPLORA</h4><a href="#home">Inicio</a><a href="#roster">Integrantes</a><a href="#games">Lo que jugamos</a><a href="#stats">Estadísticas</a><a href="#hall-of-fame">Momentos</a></div>
-    <div class="footer-column"><h4>COMUNIDAD</h4><a href="https://discord.gg/pa5HbRR6Ca" target="_blank" rel="noopener noreferrer">Discord de FER-FRIK ↗</a><a href="https://www.twitch.tv/fer_frik" target="_blank" rel="noopener noreferrer">Directos en Twitch ↗</a><a href="https://www.tiktok.com/@fer_frik" target="_blank" rel="noopener noreferrer">TikTok ↗</a><a href="https://www.youtube.com/@FER-FRIK" target="_blank" rel="noopener noreferrer">YouTube ↗</a></div>
+    <div class="footer-column"><h4>COMUNIDAD</h4><a href="https://discord.gg/pa5HbRR6Ca" target="_blank" rel="noopener noreferrer">Discord de FER-FRIK <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a><a href="https://www.twitch.tv/fer_frik" target="_blank" rel="noopener noreferrer">Directos en Twitch <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a><a href="https://www.tiktok.com/@fer_frik" target="_blank" rel="noopener noreferrer">TikTok <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a><a href="https://www.youtube.com/@FER-FRIK" target="_blank" rel="noopener noreferrer">YouTube <svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div>
     <div class="footer-column footer-social-column"><h4>FER-FRIK EN REDES</h4><div class="footer-social-links"><a href="https://www.instagram.com/fer_frik_/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.facebook.com/FER.FRIK" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://x.com/FER_FRIK" target="_blank" rel="noopener noreferrer">X</a><a href="https://kick.com/fer-frik" target="_blank" rel="noopener noreferrer">Kick</a></div></div>
-    <div class="footer-join"><span class="footer-join-kicker">¿NUEVO EN EL LOBBY?</span><h4>ÚNETE A LA CARNADA</h4><p>Tu buen juicio todavía puede salvarte.</p><button class="button join-prank" type="button">PROBAR MI SUERTE <span>→</span></button></div>
+    <div class="footer-join"><span class="footer-join-kicker">¿NUEVO EN EL LOBBY?</span><h4>ÚNETE A LA CARNADA</h4><p>Tu buen juicio todavía puede salvarte.</p><button class="button join-prank" type="button">PROBAR MI SUERTE <svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"/></svg></button></div>
     <div class="copyright">© 2026 LA CARNADA ESPORTS. TODOS LOS DERECHOS RESERVADOS.</div>
   </footer>
 
-  <button id="topButton" class="top-button" aria-label="Volver arriba">↑</button>
+  <button id="topButton" class="top-button" aria-label="Volver arriba"><svg class="icon" aria-hidden="true"><use href="#icon-chevron-up"/></svg></button>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="script.js"></script>

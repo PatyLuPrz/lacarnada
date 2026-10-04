@@ -36,7 +36,7 @@ if (heroSlides.length && heroControls) {
   let autoplayTimer;
 
   function updateHeroPauseControl() {
-    pauseButton.textContent = autoplayPaused ? "▶" : "Ⅱ";
+    pauseButton.querySelector("use").setAttribute("href", autoplayPaused ? "#icon-play" : "#icon-pause");
     pauseButton.setAttribute("aria-label", autoplayPaused ? "Reanudar carrusel" : "Pausar carrusel");
     pauseButton.setAttribute("aria-pressed", String(autoplayPaused));
   }
