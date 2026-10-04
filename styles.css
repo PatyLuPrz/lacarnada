@@ -249,7 +249,7 @@ h2 { font:900 clamp(2rem,4vw,3rem)/.95 var(--display); letter-spacing:.01em; }
 .games-list p { margin-top:8px; color:#c0bdc6; font-size:.82rem; line-height:1.55; }
 
 .split-section { display:grid; grid-template-columns:1fr 1.25fr; gap:1px; padding-top:0; }
-.stats-panel, .achievements-panel { background:#0a0b15; border:1px solid var(--line); padding:38px; }
+.stats-panel, .achievements-panel { min-width:0; background:#0a0b15; border:1px solid var(--line); padding:38px; }
 .stats-grid { display:grid; grid-template-columns:repeat(3,1fr); margin-top:30px; }
 .stats-grid div { min-height:100px; padding:18px 12px; border:1px solid var(--line); border-bottom:0; border-right:0; }
 .stats-grid div:nth-child(3n) { border-right:1px solid var(--line); }
@@ -439,7 +439,8 @@ h2 { font:900 clamp(2rem,4vw,3rem)/.95 var(--display); letter-spacing:.01em; }
   .creator-carousel-heading { align-items:flex-start; }
   .creator-video-card { flex-basis:78%; }
   .creator-video-copy h4 { font-size:1.45rem; }
-  .stats-grid { grid-template-columns:repeat(2,1fr); }
+  .stats-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .stats-grid div { min-width:0; }
   .stats-grid div:nth-child(3n) { border-right:0; }
   .stats-grid div:nth-child(2n) { border-right:1px solid var(--line); }
   .stats-grid div:nth-last-child(-n+3) { border-bottom:0; }
@@ -452,8 +453,11 @@ h2 { font:900 clamp(2rem,4vw,3rem)/.95 var(--display); letter-spacing:.01em; }
   .timeline b { grid-column:1; grid-row:1; text-align:right; margin:0 15px 0 0; }
   .timeline strong { grid-column:3; grid-row:1; margin-left:15px; }
   .timeline p { grid-column:3; grid-row:2; margin:4px 0 0 15px; }
-  .footer { grid-template-columns:1fr 1fr; gap:26px 18px; }
-  .footer-brand, .footer-join { grid-column:1/-1; }
+  .footer { grid-template-columns:repeat(2,minmax(0,1fr)); gap:26px 18px; }
+  .footer-brand, .footer-join { grid-column:1/-1; min-width:0; }
+  .footer-brand-link { min-width:0; }
+  .footer-column { min-width:0; }
+  .footer-column > a { width:auto; overflow-wrap:anywhere; }
   .copyright { grid-column:1/-1; }
 }
 
