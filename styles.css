@@ -427,6 +427,18 @@ h2 { font:900 clamp(2rem,4vw,3rem)/.95 var(--display); letter-spacing:.01em; }
   .nav a::after { display:none; }
   .nav-cta { display:none; }
   .section-dark { height:calc(100vh - 76px); height:calc(100svh - 76px); min-height:500px; }
+  .hero-slide, .hero-slide.is-active {
+    background-image:
+      radial-gradient(circle at 65% 45%, rgba(169,135,239,.18), transparent 28%),
+      radial-gradient(circle at 30% 80%, rgba(141,70,255,.13), transparent 30%),
+      linear-gradient(90deg, rgba(8,9,20,.78) 0%, rgba(8,9,20,.48) 48%, rgba(8,9,20,.76) 100%),
+      linear-gradient(180deg, transparent 40%, rgba(8,9,20,.2) 65%, #080914 100%),
+      var(--hero-image);
+    background-position:center,center,center,center,left top;
+    background-size:100% 100%,100% 100%,100% 100%,100% 100%,100% auto;
+    background-attachment:scroll;
+    transform:none;
+  }
   .hero-content { padding:70px 7vw; }
   .hero h1 { font-size:clamp(3rem, 11vw, 4.5rem); }
   .hero-carousel-controls { left:7vw; bottom:18px; }
